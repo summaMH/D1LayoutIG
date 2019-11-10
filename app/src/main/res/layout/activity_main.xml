@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:drawableRight="@drawable/panah_foreground"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:text="@string/bahasa_indonesia"/>
+
+        <ImageView
+            android:layout_width="406dp"
+            android:layout_height="125dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ig"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/bg_edittext"
+            android:fontFamily="serif-monospace"
+            android:hint="USERNAME"
+            android:padding="15dp"
+            android:paddingStart="10dp"
+            android:textColorHint="#fff" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/bg_edittext"
+            android:inputType="textPassword"
+            android:fontFamily="serif-monospace"
+            android:hint="PASSWORD"
+            android:padding="15dp"
+            android:paddingStart="10dp"
+            android:textColorHint="#fff" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/bg_button"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="LOGIN"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:text="@string/lupa_password_silahkan_klik"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="40dp">
+
+            <View
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="OR"/>
+
+
+            <View
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/fb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Log in with Facebook"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button"
+        android:layout_alignParentBottom="true"
+        android:textColor="#fff"
+        android:padding="15dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:text="Tidak punya akun? bikin dong!"/>
+
+</RelativeLayout>
